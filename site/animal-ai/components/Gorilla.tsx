@@ -1,0 +1,5 @@
+import {useId} from 'react';
+export default function Gorilla({className=''}:{className?:string}) {
+ const id=useId().replace(/:/g,'');
+ return <svg className={className} viewBox="0 0 100 100" fill="none" role="img" aria-label="ANIMAL AI"><defs><linearGradient id={id} x1="15" y1="5" x2="88" y2="95" gradientUnits="userSpaceOnUse"><stop stopColor="#434855"/><stop offset="1" stopColor="#171B25"/></linearGradient></defs><path d="M20 34 25 20 39 10 50 7 63 11 77 23 81 35 88 42 86 66 75 72 69 84 50 94 30 85 24 73 14 66 12 43Z" fill={`url(#${id})`}/><path d="m24 36 13-9 13 4 13-4 14 9-3 21-12 8H38L25 55Z" fill="#F3F4F8"/><path d="m23 37 15-4 12 6 12-6 15 4-8 6H57l-7 6-7-6H31Z" fill="#282D38"/><path d="m32 62 7-15h22l8 15-2 16-17 9-17-9Z" fill="#D4D8E2"/><path d="m39 52 11-5 11 5-3 8H42Z" fill="#282D38"/><path d="M41 72h18" stroke="#282D38" strokeWidth="3" strokeLinecap="round"/><path d="m21 47 2 17-5-4-1-12M79 47l-2 17 5-4 1-12" fill="#737B8E"/><circle cx="35" cy="43" r="2" fill="#919AFF"/><circle cx="65" cy="43" r="2" fill="#919AFF"/></svg>;
+}
